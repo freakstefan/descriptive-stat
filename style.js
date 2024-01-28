@@ -23,31 +23,6 @@ const person = new StatProp("chukwudike", "Nnewi", 16);
 // person.getAddress();
 
 // StatProp.getName();
-class MovieRental {
-  movies = [...moviesList];
-
-  rentMovie(movieName) {
-    const title = this.movies.find((mov) => mov.Title === movieName);
-
-    // if (!title) {
-    //   console.log("Movie out of stock");
-    //   return;
-    // }
-
-    if (title && !title.available) {
-      console.log("Movie is not available at the moment");
-    }
-    if (title && title.available) {
-      console.log(`${title?.Title} has ben rented by you`);
-    } else {
-      console.log("Movie out of stock");
-    }
-  }
-}
-
-const me = new MovieRental();
-
-me.rentMovie("High school musial");
 
 // 2. Using ES6+ classes, prepare code that computes descriptive statistics. Use the refreshment below to refresh your memory.
 
